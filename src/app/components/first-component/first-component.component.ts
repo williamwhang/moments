@@ -6,6 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./first-component.component.scss']
 })
 export class FirstComponentComponent implements OnInit {
+  name: string = 'Will';
+  hobbies = [ 'correr', 'jogar', 'estudar'];
+  car = {
+    name: 'Golf',
+    year: 2022,
+  }
 
   constructor() { }
 
