@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-parente-data',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./parente-data.component.scss']
 })
 export class ParenteDataComponent implements OnInit {
+  @Input() name: string = '';
+  @Input() userData: any = {};
 
   constructor() { }
 
